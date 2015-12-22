@@ -1,8 +1,8 @@
-<?php namespace Archips;
+<?php namespace Classes;
 
-include 'extractor/Extractor.php';
+include 'Extractor.php';
 
-use Extractors\Extractor;
+use Classes\Extractor;
 
 /**
 * Rar Extractor

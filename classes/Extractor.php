@@ -1,6 +1,6 @@
-<?php namespace Extractors;
+<?php namespace Classes;
 /**
-* Extractor class responsible for extract compressed file
+* Extractor class responsible for extracts compressed file
 */
 interface Extractor
 {

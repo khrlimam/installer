@@ -1,11 +1,10 @@
-<?php namespace Archips;
+<?php namespace Classes;
 
-include 'extractor/Extractor.php';
-
+use Classes\Extractor;
 /**
 * Zip Extractor class
 */
-class Zip implements Extractors\Extractor
+class Zip implements Extractor
 {
 	
 	private $programName = 'unzip';

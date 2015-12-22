@@ -1,6 +1,6 @@
 <?php namespace Command;
 
-use Extractor\Extractor;
+use Classes\Extractor;
 /**
 * Comamnd class
 */

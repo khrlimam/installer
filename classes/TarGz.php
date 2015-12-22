@@ -1,9 +1,6 @@
-<?php namespace Archips;
+<?php namespace Classes;
 
-use Extractors\Extractor;
-
-include 'extractor/Extractor.php';
-
+use Classes\Extractor;
 /**
 * TarGz class extractor
 */

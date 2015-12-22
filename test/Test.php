@@ -1,8 +1,8 @@
 <?php namespace Test;
 
-include 'archips/Rar.php';
-include 'archips/TarGz.php';
-include 'archips/Zip.php';
+include 'classes/Rar.php';
+include 'classes/TarGz.php';
+include 'classes/Zip.php';
 include 'command/Command.php';
 include 'compilers/Compiler.php';
 include 'compilers/TemplateCompiler.php';
@@ -14,19 +14,19 @@ include 'io/FileWriter.php';
 class Test
 {
 	public function testRar($file) {
-		$rar = new \Archips\Rar();
+		$rar = new \classes\Rar();
 		$command = new \Command\Command($rar);
 		return $command->extractFile($file);
 	}
 
 	public function testZip($file) {
-		$zip = new \Archips\Zip();
+		$zip = new \classes\Zip();
 		$command = new \Command\Command($zip);
 		return $command->extractFile($file);
 	}
 
 	public function testTar($file) {
-		$tar = new \Archips\TarGz();
+		$tar = new \classes\TarGz();
 		$command = new \Command\Command($tar);
 		return $command->extractFile($file);
 	}
