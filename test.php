@@ -6,8 +6,6 @@ $test = new Test\Test();
 
 $results = [
 	'rar' => $test->testRar('wl.txt.rar'),
-	'zip' => $test->testZip('wl.txt.zip'),
-	'tar' => $test->testTar('wl.txt.tar.gz')
 ];
 
 print_r($results);
