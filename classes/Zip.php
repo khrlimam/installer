@@ -1,6 +1,5 @@
 <?php namespace Classes;
 
-use Classes\Extractor;
 /**
 * Zip Extractor class
 */

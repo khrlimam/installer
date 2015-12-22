@@ -1,6 +1,4 @@
 <?php namespace Classes;
-
-use Classes\Extractor;
 /**
 * TarGz class extractor
 */

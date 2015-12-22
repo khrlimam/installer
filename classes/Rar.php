@@ -1,9 +1,6 @@
 <?php namespace Classes;
 
 include 'Extractor.php';
-
-use Classes\Extractor;
-
 /**
 * Rar Extractor
 */
