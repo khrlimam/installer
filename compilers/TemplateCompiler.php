@@ -2,7 +2,6 @@
 
 /**
 * TemplateCompiler class
-* @author Khairul Imam ki65559@gmail.com
 */
 class TemplateCompiler implements Compiler {
 

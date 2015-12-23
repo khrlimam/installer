@@ -1,9 +1,7 @@
 <?php namespace Archips;
-
 include 'extract/Extractor.php';
 /**
 * Rar Extractor
-* @author Khairul Imam ki65559@gmail.com
 */
 class Rar implements \Extract\Extractor
 {

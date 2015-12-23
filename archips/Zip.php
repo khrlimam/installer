@@ -2,7 +2,6 @@
 
 /**
 * Zip Extractor class
-* @author Khairul Imam ki65559@gmail.com
 */
 class Zip implements \Extract\Extractor
 {

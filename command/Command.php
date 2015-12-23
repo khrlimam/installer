@@ -3,7 +3,6 @@
 use Extract\Extractor;
 /**
 * Comamnd class
-* @author Khairul Imam ki65559@gmail.com
 */
 class Command
 {

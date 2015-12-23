@@ -4,7 +4,6 @@ use Compilers\Compiler;
 
 /**
 * FileWriter class
-* @author Khairul Imam ki65559@gmail.com
 */
 class FileWriter {
 
