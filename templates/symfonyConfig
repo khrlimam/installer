@@ -1,0 +1,13 @@
+parameters:
+    database_host: $HOST$
+    database_port: null
+    database_name: $DATABASE$
+    database_user: $USERNAME$
+    database_password: $PASSWORD$
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 9b2bfb792c24334f941c2252df9256b507eb6db0
+    
+    sonata_media.cdn.host: '../uploads/media'
