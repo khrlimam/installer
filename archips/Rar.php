@@ -8,10 +8,19 @@ include 'extract/Extractor.php';
 class Rar implements \Extract\Extractor
 {
 	private $programName = 'unrar';
+	private $destination;
 
-	function extract($file) 
+	function extract($file)
 	{
-		return $this->programName.' x -o+ '.$file;
+		if(is_null($this->destination))
+			return $this->programName.' x -o+ '.$file;
+		else 
+			return $this->programName.' x -o+ '.$file.' '.$this->destination;
+	}
+
+	public function setDestination($destination)
+	{
+		$this->destination = $destination;
 	}
 
 	function getExtractProgram() 
