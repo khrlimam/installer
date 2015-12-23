@@ -4,14 +4,21 @@
 * @author Khairul Imam ki65559@gmail.com
 */
 class TarGz implements \Extract\Extractor
-{
-	
-	
+{	
 	private $programName = 'tar';
+	private $destination;
 
 	function extract($file) 
 	{
-		return $this->programName.' xzvf '.$file;
+		if(is_null($this->destination))
+			return $this->programName.' xzvf '.$file;
+		else
+			return $this->programName.' xzvf '.$file.' -C '.$this->destination;
+	}
+
+	public function setDestination($destination)
+	{
+		$this->destination = $destination;
 	}
 
 	function getExtractProgram() 

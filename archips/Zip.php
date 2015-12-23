@@ -8,10 +8,19 @@ class Zip implements \Extract\Extractor
 {
 	
 	private $programName = 'unzip';
+	private $destination;
 
 	function extract($file) 
 	{
-		return $this->programName.' -o '.$file;
+		if(is_null($this->destination))
+			return $this->programName.' -o '.$file;
+		else
+			return $this->programName.' -o '.$file.' -d '.$this->destination;
+	}
+
+	public function setDestination($destination)
+	{
+		$this->destination = $destination;
 	}
 
 	function getExtractProgram() 
