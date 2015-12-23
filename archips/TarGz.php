@@ -1,6 +1,7 @@
 <?php namespace Archips;
 /**
 * TarGz class extractor
+* @author Khairul Imam ki65559@gmail.com
 */
 class TarGz implements \Extract\Extractor
 {
