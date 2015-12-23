@@ -31,15 +31,14 @@ class Test
 		return $command->extractFile($file);
 	}
 
-	public function write($file) {
+	public function write($file, $template) {
 		$data = [
-			'DATABASE' => 'database_mantapppp',
-			'HOST' => 'host_mantapppp',
-			'USERNAME' => 'username_mantapppp',
-			'PASSWORD' => 'password_mantapppp'
+			'DATABASE' => 'mantap_db',
+			'HOST' => 'mantap_host',
+			'USERNAME' => 'mantap_username',
+			'PASSWORD' => 'mantap_password'
 		];
-		$template = include('config/template.php');
-		$templateCompiler = new \Compilers\TemplateCompiler($data, $template['lct']);
+		$templateCompiler = new \Compilers\TemplateCompiler($data, $template);
 		$fileWriter = new \IO\FileWriter($file, $templateCompiler);
 		if($fileWriter->writeCompiled())
 			return true;
