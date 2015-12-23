@@ -1,0 +1,19 @@
+{
+    "name": "khairulimam/installer",
+    "description": "personal use package",
+    "type": "Library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Khairul Imam",
+            "email": "ki65559@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "KhairulImam\\Installer\\": "src/"
+        }
+    }
+}
