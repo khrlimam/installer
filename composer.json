@@ -1,6 +1,7 @@
 {
     "name": "khairulimam/installer",
     "description": "personal use package",
+    "version": "dev-master",
     "type": "Library",
     "license": "GPL",
     "authors": [
@@ -9,6 +10,7 @@
             "email": "ki65559@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0"
         },
