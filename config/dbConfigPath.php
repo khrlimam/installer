@@ -1,6 +1,6 @@
 <?php
 return [
-	'laravel' => realpath('../../apimobile/app/config/database.php'),
+	'laravel' => '../apimobile/app/config/database.php',
 	'symfony' => realpath(''),
 	'yii' => realpath('')
 ];

@@ -1,8 +1,8 @@
 <?php namespace Test;
 
-include 'classes/Rar.php';
-include 'classes/TarGz.php';
-include 'classes/Zip.php';
+include 'archips/Rar.php';
+include 'archips/TarGz.php';
+include 'archips/Zip.php';
 include 'command/Command.php';
 include 'compilers/Compiler.php';
 include 'compilers/TemplateCompiler.php';
@@ -14,29 +14,29 @@ include 'io/FileWriter.php';
 class Test
 {
 	public function testRar($file) {
-		$rar = new \classes\Rar();
+		$rar = new \Archips\Rar();
 		$command = new \Command\Command($rar);
 		return $command->extractFile($file);
 	}
 
 	public function testZip($file) {
-		$zip = new \classes\Zip();
+		$zip = new \Archips\Zip();
 		$command = new \Command\Command($zip);
 		return $command->extractFile($file);
 	}
 
 	public function testTar($file) {
-		$tar = new \classes\TarGz();
+		$tar = new \Archips\TarGz();
 		$command = new \Command\Command($tar);
 		return $command->extractFile($file);
 	}
 
 	public function write($file) {
 		$data = [
-			'DATABASE' => 'database_mantap',
-			'HOST' => 'host_mantap',
-			'USERNAME' => 'username_mantap',
-			'PASSWORD' => 'password_mantap'
+			'DATABASE' => 'database_mantapppp',
+			'HOST' => 'host_mantapppp',
+			'USERNAME' => 'username_mantapppp',
+			'PASSWORD' => 'password_mantapppp'
 		];
 		$template = include('config/template.php');
 		$templateCompiler = new \Compilers\TemplateCompiler($data, $template['lct']);
