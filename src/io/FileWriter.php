@@ -1,4 +1,4 @@
-<?php namespace IO;
+<?php namespace KhairulImam\Installer\IO;
 
 use Compilers\Compiler;
 

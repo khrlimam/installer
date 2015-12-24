@@ -1,4 +1,4 @@
-<?php namespace Command;
+<?php namespace KhairulImam\Installer\Command;
 
 use Extract\Extractor;
 /**

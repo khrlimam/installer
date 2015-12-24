@@ -6,20 +6,20 @@ require_once '../vendor/autoload.php';
 class Test
 {
 	public function testRar($file) {
-		$rar = new \Archips\Rar();
-		$command = new \Command\Command($rar);
+		$rar = new KhairulImam\Installer\Archips\Rar();
+		$command = new KhairulImam\Installer\Command\Command($rar);
 		return $command->extractFile($file);
 	}
 
 	public function testZip($file) {
-		$zip = new \Archips\Zip();
-		$command = new \Command\Command($zip);
+		$zip = new KhairulImam\Installer\Archips\Zip();
+		$command = new KhairulImam\Installer\Command\Command($zip);
 		return $command->extractFile($file);
 	}
 
 	public function testTar($file) {
-		$tar = new \Archips\TarGz();
-		$command = new \Command\Command($tar);
+		$tar = new KhairulImam\Installer\Archips\TarGz();
+		$command = new KhairulImam\Installer\Command\Command($tar);
 		return $command->extractFile($file);
 	}
 
@@ -30,12 +30,11 @@ class Test
 			'USERNAME' => 'mantap_username',
 			'PASSWORD' => 'mantap_password'
 		];
-		$templateCompiler = new \Compilers\TemplateCompiler($data, $template);
-		$fileWriter = new \IO\FileWriter($file, $templateCompiler);
+		$templateCompiler = new KhairulImam\Installer\Compilers\TemplateCompiler($data, $template);
+		$fileWriter = new KhairulImam\Installer\IO\FileWriter($file, $templateCompiler);
 		if($fileWriter->writeCompiled())
 			return true;
 		else
 			return false;
 	}
-
 }

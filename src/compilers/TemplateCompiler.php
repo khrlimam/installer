@@ -1,4 +1,4 @@
-<?php namespace Compilers;
+<?php namespace KhairulImam\Installer\Compilers;
 
 /**
 * TemplateCompiler class

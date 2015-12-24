@@ -1,4 +1,4 @@
-<?php namespace Archips;
+<?php namespace KhairulImam\Installer\Archips;
 
 /**
 * Zip Extractor class

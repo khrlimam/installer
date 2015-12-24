@@ -1,4 +1,4 @@
-<?php namespace Extract;
+<?php namespace KhairulImam\Installer\Extract;
 /**
 * Extractor class responsible for extracts compressed file
 */
