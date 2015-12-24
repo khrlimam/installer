@@ -1,13 +1,5 @@
 <?php namespace Test;
-
-include 'archips/Rar.php';
-include 'archips/TarGz.php';
-include 'archips/Zip.php';
-include 'command/Command.php';
-include 'compilers/Compiler.php';
-include 'compilers/TemplateCompiler.php';
-include 'io/FileWriter.php';
-
+require_once __DIR__.'/vendor/autoload.php';
 /**
 * Test
 */

@@ -1,5 +1,4 @@
 <?php namespace Archips;
-include 'extract/Extractor.php';
 /**
 * Rar Extractor
 */
