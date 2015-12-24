@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-include 'test/Test.php';
+include 'Test.php';
 
 $test = new Test\Test();
 
