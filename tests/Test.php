@@ -1,12 +1,13 @@
 <?php namespace Test;
 
+require_once __DIR__.'/../../../autoload.php';
+
 use KhairulImam\Installer\Archips\Rar;
 use KhairulImam\Installer\Archips\Zip;
 use KhairulImam\Installer\Archips\TarGz;
 use KhairulImam\Installer\IO\FileWriter;
 use KhairulImam\Installer\Command\Command;
 use KhairulImam\Installer\Compilers\TemplateCompiler;
-require_once __DIR__.'/../../../autoload.php';
 /**
 * Test
 */

@@ -1,6 +1,6 @@
 <?php namespace KhairulImam\Installer\Command;
 
-use Extract\Extractor;
+use KhairulImam\Installer\Extract\Extractor;
 /**
 * Comamnd class
 */

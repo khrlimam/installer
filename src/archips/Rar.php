@@ -1,8 +1,10 @@
 <?php namespace KhairulImam\Installer\Archips;
+
+use KhairulImam\Installer\Extract\Extractor;
 /**
 * Rar Extractor
 */
-class Rar implements \Extract\Extractor
+class Rar implements Extractor
 {
 	private $programName = 'unrar';
 	private $destination;

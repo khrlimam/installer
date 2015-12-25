@@ -1,8 +1,10 @@
 <?php namespace KhairulImam\Installer\Archips;
+
+use KhairulImam\Installer\Extract\Extractor;
 /**
 * TarGz class extractor
 */
-class TarGz implements \Extract\Extractor
+class TarGz implements Extractor
 {	
 	private $programName = 'tar';
 	private $destination;
