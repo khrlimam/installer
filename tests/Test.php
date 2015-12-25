@@ -1,6 +1,6 @@
 <?php namespace Test;
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'/../../../autoload.php';
 
 use KhairulImam\Installer\Archips\Rar;
 use KhairulImam\Installer\Archips\Zip;
