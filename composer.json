@@ -20,12 +20,12 @@
         "psr-0": {
             "KhairulImam\\Installer\\": "src/",
         },
-        "classmap": {
+        "classmap": [
             "src/archips",
             "src/command",
             "src/compilers",
             "src/extract",
             "src/io"
-        }
+        ]
     }
 }
