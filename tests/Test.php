@@ -6,7 +6,7 @@ use KhairulImam\Installer\Archips\TarGz;
 use KhairulImam\Installer\IO\FileWriter;
 use KhairulImam\Installer\Command\Command;
 use KhairulImam\Installer\Compilers\TemplateCompiler;
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'/../../../autoload.php';
 /**
 * Test
 */
