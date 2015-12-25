@@ -17,8 +17,15 @@
             "phpunit/phpunit": "4.0.*"
         },
     "autoload": {
-        "psr-4": {
-            "KhairulImam\\Installer\\": "src/"
+        "psr-0": {
+            "KhairulImam\\Installer\\": "src/",
+        },
+        "classmap": {
+            "src/archips",
+            "src/command",
+            "src/compilers",
+            "src/extract",
+            "src/io"
         }
     }
 }
