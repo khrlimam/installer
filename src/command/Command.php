@@ -9,7 +9,7 @@ class Command
 
 	private $extractor;
 
-	function __construct(Extractor $extractor)
+	function setExtractor(Extractor $extractor)
 	{
 		$this->extractor = $extractor;
 	}

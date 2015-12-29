@@ -15,19 +15,22 @@ class Test
 {
 	public function testRar($file) {
 		$rar = new Rar();
-		$command = new Command($rar);
+		$command = new Command();
+		$command->setExtractor($rar);
 		return $command->extractFile($file);
 	}
 
 	public function testZip($file) {
 		$zip = new Zip();
-		$command = new Command($zip);
+		$command = new Command();
+		$command->setExtractor($zip);
 		return $command->extractFile($file);
 	}
 
 	public function testTar($file) {
 		$tar = new TarGz();
-		$command = new Command($tar);
+		$command = new Command();
+		$command->setExtractor($tar);
 		return $command->extractFile($file);
 	}
 
