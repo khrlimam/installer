@@ -1,6 +1,6 @@
 <?php namespace KhairulImam\Installer\IO;
 
-use Compilers\Compiler;
+use KhairulImam\Installer\Compilers\Compiler;
 
 /**
 * FileWriter class
@@ -10,7 +10,7 @@ class FileWriter {
 	private $file;
 	private $compiler;
 
-	function __construct($file, $compiler)
+	function __construct($file, Compiler $compiler)
 	{
 		$this->file = $file;
 		$this->compiler = $compiler;
